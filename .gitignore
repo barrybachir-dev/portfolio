@@ -1,0 +1,27 @@
+# Fichiers système
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDE & Éditeurs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Node (au cas où)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Fichiers temporaires
+*.tmp
+*.log
+.env
+.env.local
+
+# Dossiers système
+__pycache__/
+.pytest_cache/
