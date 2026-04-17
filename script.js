@@ -25,7 +25,9 @@ document.getElementById('menu-toggle').addEventListener('click', () => {
 document.querySelectorAll('a[href^="#"]').forEach(link => {
     link.addEventListener('click', (e) => {
         e.preventDefault();
-        document.querySelector(link.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+        const target = document.querySelector(link.getAttribute('href'));
+        const isMobile = window.innerWidth <= 768;
+        target.scrollIntoView({ behavior: isMobile ? 'auto' : 'smooth' });
         document.getElementById('mobile-menu').classList.remove('show');
     });
 });
