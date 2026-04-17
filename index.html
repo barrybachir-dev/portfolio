@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elhadj Mamadou Bassirou Barry | Développeur Web</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">E.M.B<span>-Barry</span></div>
+            
+            <ul class="nav-links">
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#formation">Formation</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-right">
+                <button id="theme-toggle" class="theme-btn"><i class="fas fa-moon"></i></button>
+                <button id="menu-toggle" class="menu-toggle"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+
+        <!-- Menu Mobile -->
+        <ul class="mobile-menu" id="mobile-menu">
+            <li><a href="#home">Accueil</a></li>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#formation">Formation</a></li>
+            <li><a href="#skills">Compétences</a></li>
+            <li><a href="#projects">Projets</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="badge"><i class="fas fa-star" style="margin-right:6px;"></i>2ème année Licence Informatique</div>
+            <h1>Salut, je suis <span class="highlight">Elhadj Mamadou Bassirou Barry</span> 👋</h1>
+            <div id="typing" class="typing-text"></div>
+            <p class="subtitle">Développeur Web créatif passionné basé à Dakar, Sénégal. Je transforme les idées en solutions web modernes et je cherche un stage pour approfondir mon expérience.</p>
+            
+            <div class="hero-buttons">
+                <a href="#projects" class="btn primary"><i class="fas fa-briefcase" style="margin-right:8px;"></i>Voir mes projets</a>
+                <a href="#contact" class="btn secondary"><i class="fas fa-envelope" style="margin-right:8px;"></i>Me contacter</a>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <img src="images/photo-profil.jpeg" alt="Elhadj Mamadou Bassirou Barry" class="profile-img">
+        </div>
+    </section>
+
+    <!-- À propos -->
+    <section id="about" class="section">
+        <h2 class="section-title">À propos de moi</h2>
+        <div class="about-text">
+            <p>Je suis <strong>Elhadj Mamadou Bassirou Barry</strong>, étudiant passionné en 2ème année de Licence en Informatique à l'ISMI à Dakar. 💻 Avec plus d'un an d'expérience dans le développement web, je me spécialise dans la création de sites modernes et responsifs qui allient design et fonctionnalité.</p>
+            <p>Ce portfolio est mon premier projet public sur GitHub, réalisé entièrement de mes mains avec HTML, CSS et JavaScript. Il reflète ma progression en tant que développeur et ma volonté d'explorer de nouvelles technologies.</p>
+        </div>
+    </section>
+
+    <!-- Formation -->
+    <section id="formation" class="section">
+        <h2 class="section-title">Ma Formation</h2>
+        <div class="formation-grid">
+            <div class="formation-card">
+                <h3><i class="fas fa-graduation-cap" style="color:var(--accent); margin-right:10px;"></i>Licence 2 en Informatique</h3>
+                <p class="year">2024 - Aujourd'hui</p>
+                <p><strong>ISMI</strong> (Institut supérieur de Management et d'informatique)<br><em>Spécialisation : Développement Web</em></p>
+            </div>
+            <div class="formation-card">
+                <h3><i class="fas fa-book" style="color:var(--accent); margin-right:10px;"></i>Licence 1 en Informatique</h3>
+                <p class="year">2023 - 2024</p>
+                <p>Fondamentaux de la programmation, structures de données et développement web</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compétences -->
+    <section id="skills" class="section">
+        <h2 class="section-title">Mes Compétences</h2>
+        <div class="skills-grid" id="skills-grid"></div>
+    </section>
+
+    <!-- Projets -->
+    <section id="projects" class="section">
+        <h2 class="section-title">Mes Projets</h2>
+        
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">Tous</button>
+            <button class="filter-btn" data-filter="frontend">Front-end</button>
+        </div>
+
+        <div class="projects-grid" id="projects-grid"></div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+        <h2 class="section-title">Contactez-moi</h2>
+        <p style="text-align:center; max-width:600px; margin:0 auto 2.5rem; font-size:1.05rem; opacity:0.85;">Vous avez un projet, une question ou une opportunité de stage ? N'hésitez pas à me contacter. Je suis toujours enthousiaste de discuter de nouvelles idées ! 🚀</p>
+        <form id="contact-form" class="contact-form">
+            <input type="text" placeholder="Votre nom complet" required>
+            <input type="email" placeholder="Votre adresse email" required>
+            <textarea placeholder="Votre message ou proposition de stage..." rows="6" required></textarea>
+            <button type="submit" class="btn primary" style="align-self:flex-start;">Envoyer mon message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p><strong>© 2026 Elhadj Mamadou Bassirou Barry</strong> | Dakar, Sénégal 🇸🇳</p>
+        <p>Développeur Web • Étudiant • Passionné de Technologie</p>
+    </footer>
+
+    <!-- Modal Projet -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
