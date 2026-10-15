@@ -1,6 +1,6 @@
 # 👨‍💻 Elhadj Mamadou Bassirou Barry - Développeur Web
 
-Bienvenue sur mon portfolio professionnel ! Je suis étudiant en informatique à Dakar et je recherche un stage en développement web.
+Bienvenue sur mon portfolio professionnel ! Je suis étudiant en informatique à Dakar et ouvert aux opportunités de stage dans différents domaines liés à ma formation.
 
 ## 🎯 À propos de moi
 
@@ -86,4 +86,4 @@ Utilisez le formulaire de contact sur mon portfolio !
 
 **© 2026 Elhadj Mamadou Bassirou Barry** | Dakar, Sénégal
 
-*Étudiant en informatique • Recherche de stage en développement web*
+*Étudiant en informatique • Ouvert aux opportunités de stage*
