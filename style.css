@@ -411,6 +411,13 @@ a:focus-visible, button:focus-visible, [role="button"]:focus-visible {
     font-size: 1.05rem;
 }
 
+.skill-description {
+    margin-bottom: 1rem;
+    color: var(--muted);
+    font-size: 0.92rem;
+    line-height: 1.55;
+}
+
 .skill-list {
     display: flex;
     flex-wrap: wrap;

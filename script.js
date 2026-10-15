@@ -47,10 +47,42 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
 
 // ==================== SKILLS ====================
 const skills = [
-    {name: "Front-end", items: ["HTML5", "CSS3", "JavaScript", "Responsive Design"], icon: "fas fa-code"},
-    {name: "Développement & données", items: ["PHP", "MySQL"], icon: "fas fa-database"},
-    {name: "Outils & CMS", items: ["Git", "GitHub", "WordPress"], icon: "fas fa-screwdriver-wrench"},
-    {name: "Conception", items: ["UX/UI"], icon: "fas fa-pen-ruler"}
+    {
+        name: "Développement web",
+        description: "Création de pages et d'applications web.",
+        items: ["HTML", "CSS", "JavaScript"],
+        icon: "fas fa-code"
+    },
+    {
+        name: "Programmation & algorithmique",
+        description: "Bases de la programmation, logique, algorithmes et structures de contrôle.",
+        items: ["Node.js", "Résolution de problèmes", "Algorithmique"],
+        icon: "fas fa-diagram-project"
+    },
+    {
+        name: "Bases de données",
+        description: "Conception, gestion et manipulation des données.",
+        items: ["SQL", "Supabase"],
+        icon: "fas fa-database"
+    },
+    {
+        name: "Systèmes & administration Linux",
+        description: "Installation, utilisation et notions d'administration de systèmes.",
+        items: ["Linux", "Debian"],
+        icon: "fab fa-linux"
+    },
+    {
+        name: "Réseaux informatiques",
+        description: "Notions de configuration et d'architecture réseau.",
+        items: ["Cisco Packet Tracer", "GNS3"],
+        icon: "fas fa-network-wired"
+    },
+    {
+        name: "Gestion de versions",
+        description: "Suivi et gestion du code source.",
+        items: ["Git", "GitHub"],
+        icon: "fab fa-git-alt"
+    }
 ];
 
 function renderSkills() {
@@ -65,6 +97,7 @@ function renderSkills() {
                 <i class="${skill.icon}" aria-hidden="true"></i>
                 <h3>${skill.name}</h3>
             </div>
+            <p class="skill-description">${skill.description}</p>
             <ul class="skill-list">${skill.items.map(item => `<li>${item}</li>`).join('')}</ul>
         `;
         container.appendChild(div);

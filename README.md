@@ -4,10 +4,18 @@ Bienvenue sur mon portfolio professionnel ! Je suis étudiant en informatique à
 
 ## 🎯 À propos de moi
 
-Je m'intéresse au développement web et à la création d'interfaces simples à utiliser. Mes projets m'ont permis de pratiquer :
-- **Front-end** : HTML5, CSS3, JavaScript
-- **Conception** : Responsive Design, UX/UI
-- **Outils et CMS** : WordPress, Git & GitHub
+Voici les compétences et technologies que j'ai apprises et pratiquées à l'ISMI (Dakar).
+
+### Compétences techniques
+
+- **Développement web** : création de pages et d'applications web
+- **Programmation** : bases de la programmation et résolution de problèmes
+- **Algorithmique** : logique, algorithmes et structures de contrôle
+- **Bases de données** : conception, gestion et manipulation des données
+- **Réseaux informatiques** : notions de configuration et d'architecture réseau
+- **Systèmes d'exploitation** : notions d'installation, d'utilisation et d'administration
+- **Administration Linux** : utilisation de Linux et Debian
+- **Gestion de versions** : suivi et gestion du code source avec Git et GitHub
 
 ## 📚 Ma Formation
 
@@ -23,10 +31,14 @@ Je m'intéresse au développement web et à la création d'interfaces simples à
 
 ## 💻 Compétences techniques
 
-- **Front-end** : HTML5, CSS3, JavaScript, Responsive Design
-- **Développement & données** : PHP, MySQL
-- **Outils & CMS** : Git, GitHub, WordPress
-- **Conception** : UX/UI
+| Catégorie | Technologies et outils |
+| --- | --- |
+| Développement web | HTML, CSS, JavaScript |
+| Programmation côté serveur | Node.js |
+| Bases de données | SQL, Supabase |
+| Systèmes d'exploitation | Linux, Debian |
+| Réseaux | Cisco Packet Tracer, GNS3 |
+| Gestion de code | Git, GitHub |
 
 ## ✨ Fonctionnalités du Portfolio
 
