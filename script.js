@@ -199,3 +199,39 @@ document.querySelectorAll('.filter-btn').forEach(btn => {
 });
 
 renderProjects(projects);
+
+// ==================== FORMULAIRE DE CONTACT ====================
+const contactForm = document.getElementById('contact-form');
+const contactStatus = document.getElementById('contact-status');
+
+contactForm.addEventListener('submit', async event => {
+    event.preventDefault();
+    const submitButton = contactForm.querySelector('button[type="submit"]');
+    submitButton.disabled = true;
+    contactStatus.hidden = false;
+    contactStatus.dataset.state = '';
+    contactStatus.textContent = 'Envoi en cours…';
+
+    try {
+        const response = await fetch(contactForm.action, {
+            method: 'POST',
+            body: new FormData(contactForm),
+            headers: { Accept: 'application/json' }
+        });
+        const result = await response.json();
+
+        if (!response.ok || result.success === false || result.success === 'false') {
+            throw new Error(result.message || 'Le service de contact a refusé le message.');
+        }
+
+        contactStatus.dataset.state = 'success';
+        contactStatus.textContent = 'Message envoyé. Merci de m’avoir contacté.';
+        contactForm.reset();
+    } catch (error) {
+        console.error('Échec de l’envoi du formulaire de contact :', error);
+        contactStatus.dataset.state = 'error';
+        contactStatus.textContent = 'Le message n’a pas pu être envoyé. Si c’est le premier envoi, vérifie l’e-mail d’activation FormSubmit. Tu peux aussi m’écrire directement à barryelbachir@gmail.com.';
+    } finally {
+        submitButton.disabled = false;
+    }
+});

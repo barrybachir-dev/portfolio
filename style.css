@@ -105,15 +105,12 @@ body {
 }
 
 .logo {
-    font-size: 1.8rem;
+    font-size: clamp(0.9rem, 1.3vw, 1.15rem);
     font-weight: 800;
     color: var(--text);
-    letter-spacing: 0.06em;
-}
-
-.logo span {
-    color: var(--accent);
-    font-weight: 700;
+    letter-spacing: -0.02em;
+    text-decoration: none;
+    white-space: nowrap;
 }
 
 .nav-links {
@@ -517,6 +514,26 @@ a:focus-visible, button:focus-visible, [role="button"]:focus-visible {
     gap: 1.5rem;
 }
 
+.contact-status {
+    margin: 0;
+    padding: 12px 16px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    color: var(--muted);
+}
+
+.contact-status[data-state="success"] {
+    color: #166534;
+    background: #f0fdf4;
+    border-color: #bbf7d0;
+}
+
+.contact-status[data-state="error"] {
+    color: #991b1b;
+    background: #fef2f2;
+    border-color: #fecaca;
+}
+
 .form-honeypot {
     position: absolute;
     left: -9999px;
@@ -562,6 +579,11 @@ a:focus-visible, button:focus-visible, [role="button"]:focus-visible {
     outline: none;
     border-color: var(--accent);
     box-shadow: 0 0 0 3px rgba(107, 114, 128, 0.12);
+}
+
+.contact-form button:disabled {
+    cursor: wait;
+    opacity: 0.7;
 }
 
 .modal {

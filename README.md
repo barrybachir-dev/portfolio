@@ -40,6 +40,7 @@ Je m'intéresse au développement web et à la création d'interfaces simples à
 
 - **Portfolio** : [Voir le site](https://Barrybachir-dev.github.io/portfolio)
 - **GitHub** : [https://github.com/Barrybachir-dev](https://github.com/Barrybachir-dev)
+- **LinkedIn** : [mamadou-bachir-barry](https://linkedin.com/in/mamadou-bachir-barry-a918b2225)
 - **Email** : [barryelbachir@gmail.com](mailto:barryelbachir@gmail.com)
 
 ## 📦 Technos Utilisées
@@ -70,7 +71,7 @@ portfolio/
 
 ## ⚙️ Configuration du formulaire
 
-Le formulaire utilise [FormSubmit](https://formsubmit.co/) pour transmettre les messages à `barryelbachir@gmail.com`, sans serveur dédié. Au premier envoi depuis le site publié, ouvre l'e-mail de confirmation envoyé par FormSubmit et valide l'adresse de réception.
+Le formulaire utilise l’endpoint AJAX de [FormSubmit](https://formsubmit.co/) pour transmettre les messages à `barryelbachir@gmail.com` sans quitter la page. Au premier envoi, ouvre l’e-mail de confirmation FormSubmit et active l’adresse de réception. En cas d’échec, le formulaire affiche un message d’erreur et propose l’adresse e-mail directe.
 
 ## 👋 Me Contacter
 
