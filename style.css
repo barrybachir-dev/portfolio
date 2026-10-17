@@ -282,12 +282,15 @@ a:focus-visible, button:focus-visible, [role="button"]:focus-visible {
 }
 
 .hero-image {
-    flex: 1;
+    flex: 0 1 430px;
     animation: slideInRight 0.8s ease-out;
 }
 
 .profile-img {
     width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    object-position: center 30%;
     border-radius: 18px;
     box-shadow: var(--shadow-lg);
     border: 1px solid var(--line);
@@ -750,7 +753,18 @@ footer p:last-child {
 @media (max-width: 768px) {
     .nav-links { display: none; }
     .menu-toggle { display: inline-flex; }
-    .hero { padding-top: 100px; }
+    .hero {
+        min-height: auto;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 2rem;
+        padding-top: 120px;
+    }
+    .hero-image {
+        width: min(100%, 380px);
+        flex: none;
+        align-self: center;
+    }
     .hero h1 { font-size: 2.2rem; }
     .section-title { font-size: 2rem; }
     .modal-content { padding: 2rem 1.25rem; }
