@@ -1,4 +1,4 @@
-# 👨‍💻 Elhadj Mamadou Bassirou Barry - Développeur Web
+# 👨‍💻 Elhadj Mamadou Bassirou Barry - Étudiant en informatique
 
 Bienvenue sur mon portfolio professionnel ! Je suis étudiant en informatique à Dakar et ouvert aux opportunités de stage dans différents domaines liés à ma formation.
 
@@ -46,6 +46,9 @@ Voici les compétences et technologies que j'ai apprises et pratiquées à l'ISM
 ✅ **Thème clair/sombre**
 ✅ **Navigation mobile**
 ✅ **Projets filtrables** - Sites web et applications
+✅ **Aperçus de projets** - Captures, technologies et détails dans une fenêtre dédiée
+✅ **Présentation des objectifs** - Type d'opportunité recherchée, sans restriction à un seul domaine
+✅ **Retour en haut** - Bouton accessible après défilement
 ✅ **Formulaire de contact** - Transmet les demandes via FormSubmit
 ✅ **CV téléchargeable** - PDF disponible depuis la page d'accueil
 

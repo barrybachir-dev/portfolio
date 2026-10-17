@@ -31,6 +31,17 @@ menuToggle.addEventListener('click', () => {
     menuToggle.setAttribute('aria-label', isOpen ? 'Fermer le menu' : 'Ouvrir le menu');
 });
 
+// ==================== RETOUR EN HAUT ====================
+const backToTop = document.querySelector('.back-to-top');
+const updateBackToTop = () => {
+    backToTop.hidden = window.scrollY < 480;
+};
+window.addEventListener('scroll', updateBackToTop, { passive: true });
+updateBackToTop();
+backToTop.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
 // ==================== SMOOTH SCROLL ====================
 document.querySelectorAll('a[href^="#"]').forEach(link => {
     link.addEventListener('click', (e) => {
@@ -157,13 +168,17 @@ function renderProjects(filteredProjects) {
         card.setAttribute('aria-haspopup', 'dialog');
         card.setAttribute('aria-label', `Voir les détails du projet ${project.title}`);
         card.innerHTML = `
-            <img src="${project.img}" alt="${project.title}">
+            <div class="project-preview">
+                <img src="${project.img}" alt="Aperçu du projet ${project.title}" loading="lazy" decoding="async">
+                <span class="project-type">${project.category === 'site' ? 'Site web' : 'Application'}</span>
+            </div>
             <div class="project-info">
                 <h3>${project.title}</h3>
                 <p>${project.desc}</p>
                 <div class="project-tags">
                     ${project.tags.map(tag => `<span>${tag}</span>`).join('')}
                 </div>
+                <span class="project-discover">Découvrir le projet <i class="fas fa-arrow-right" aria-hidden="true"></i></span>
             </div>
         `;
         card.addEventListener('click', () => showProjectModal(project));
@@ -191,8 +206,11 @@ function showProjectModal(project) {
 
     body.innerHTML = `
         <h2 id="modal-title">${project.title}</h2>
-        <img src="${project.img}" style="width:100%; border-radius:16px; margin:1rem 0;" alt="${project.title}">
+        <img class="modal-project-image" src="${project.img}" alt="Aperçu du projet ${project.title}">
         <p>${project.desc}</p>
+        <div class="project-tags modal-project-tags">
+            ${project.tags.map(tag => `<span>${tag}</span>`).join('')}
+        </div>
         ${links ? `<div class="modal-links">${links}</div>` : ''}
     `;
     projectModal.style.display = 'flex';

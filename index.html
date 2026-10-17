@@ -6,7 +6,7 @@
     <title>Elhadj Mamadou Bassirou Barry | Portfolio</title>
     <meta name="description" content="Étudiant en informatique à Dakar, Elhadj Mamadou Bassirou Barry est ouvert aux opportunités de stage. Découvrez ses projets, sa formation et ses compétences.">
     <meta name="theme-color" content="#f8f9fa">
-    <link rel="stylesheet" href="style.css?v=20261017-2">
+    <link rel="stylesheet" href="style.css?v=20261017-3">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
@@ -46,10 +46,10 @@
     <!-- Hero -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <div class="badge">Ouvert aux opportunités de stage</div>
+            <div class="badge"><span class="availability-dot" aria-hidden="true"></span>Ouvert aux opportunités de stage</div>
             <h1>Bonjour, je suis <span class="highlight">Elhadj Mamadou Bassirou Barry</span></h1>
             <p class="typing-text">Étudiant en informatique · Dakar, Sénégal</p>
-            <p class="subtitle">Je souhaite rejoindre une équipe, contribuer à des projets concrets et développer mes compétences au contact de professionnels.</p>
+            <p class="subtitle">Étudiant en informatique à Dakar, je souhaite contribuer à des projets concrets et progresser au contact d’une équipe.</p>
             
             <div class="hero-buttons">
                 <a href="#projects" class="btn primary">Voir mes projets</a>
@@ -71,8 +71,16 @@
         <h2 class="section-title">Profil</h2>
         <div class="about-text">
             <p>Étudiant en informatique à l'ISMI, je m'intéresse au développement web et à la création d'interfaces simples à utiliser. Mes projets personnels et scolaires m'ont permis de pratiquer l'intégration web et la programmation.</p>
-            <p>Je recherche un stage où je pourrai participer au développement de fonctionnalités, progresser au contact d'une équipe et découvrir les méthodes de travail en entreprise. Je suis motivé à apprendre et à prendre en charge des tâches adaptées à mon niveau.</p>
+            <p>Je suis motivé à apprendre, à prendre en charge des tâches adaptées à mon niveau et à découvrir les méthodes de travail en entreprise.</p>
         </div>
+        <aside class="opportunity-card" aria-labelledby="opportunity-title">
+            <span class="opportunity-icon" aria-hidden="true"><i class="fas fa-compass"></i></span>
+            <div>
+                <h3 id="opportunity-title">Ce que je recherche</h3>
+                <p>Une opportunité de stage dans un domaine lié à l’informatique, pour contribuer à des missions concrètes, apprendre au sein d’une équipe et consolider mes compétences.</p>
+            </div>
+            <a class="opportunity-link" href="#contact">Échanger avec moi <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+        </aside>
     </section>
 
     <!-- Formation -->
@@ -157,6 +165,10 @@
         </div>
     </div>
 
-    <script src="script.js?v=20261017-1"></script>
+    <button class="back-to-top" type="button" aria-label="Remonter en haut de la page" hidden>
+        <i class="fas fa-arrow-up" aria-hidden="true"></i>
+    </button>
+
+    <script src="script.js?v=20261017-3"></script>
 </body>
 </html>
