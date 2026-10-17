@@ -47,6 +47,7 @@ Voici les compétences et technologies que j'ai apprises et pratiquées à l'ISM
 ✅ **Navigation mobile**
 ✅ **Projets filtrables** - Sites web et applications
 ✅ **Formulaire de contact** - Transmet les demandes via FormSubmit
+✅ **CV téléchargeable** - PDF disponible depuis la page d'accueil
 
 ## 🔗 Liens Importants
 
@@ -54,6 +55,7 @@ Voici les compétences et technologies que j'ai apprises et pratiquées à l'ISM
 - **GitHub** : [https://github.com/Barrybachir-dev](https://github.com/Barrybachir-dev)
 - **LinkedIn** : [mamadou-bachir-barry](https://linkedin.com/in/mamadou-bachir-barry-a918b2225)
 - **Email** : [barryelbachir@gmail.com](mailto:barryelbachir@gmail.com)
+- **CV** : [Télécharger le CV (PDF)](./CV-Elhadj-Mamadou-Bassirou-Barry.pdf)
 
 ## 📦 Technos Utilisées
 
@@ -76,6 +78,7 @@ portfolio/
 ├── index.html          # Page principale
 ├── style.css           # Styles (animations, responsive)
 ├── script.js           # Fonctionnalités (dark mode, etc)
+├── CV-Elhadj-Mamadou-Bassirou-Barry.pdf # CV téléchargeable
 ├── images/             # Photos des projets
 ├── .gitignore          # Fichiers à ignorer
 └── README.md           # Ce fichier
