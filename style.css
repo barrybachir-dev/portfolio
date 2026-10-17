@@ -175,13 +175,13 @@ a:focus-visible, button:focus-visible, [role="button"]:focus-visible {
 
 /* HERO */
 .hero {
-    min-height: 100vh;
+    min-height: 88vh;
     display: flex;
     align-items: center;
-    padding: 100px 5% 80px;
+    padding: 88px 5% 48px;
     max-width: 1200px;
     margin: 0 auto;
-    gap: 4rem;
+    gap: 3rem;
 }
 
 .hero-content {
@@ -250,9 +250,9 @@ a:focus-visible, button:focus-visible, [role="button"]:focus-visible {
 }
 
 .hero-buttons {
-    margin: 2.5rem 0;
+    margin: 1.75rem 0;
     display: flex;
-    gap: 1.5rem;
+    gap: 1rem;
     flex-wrap: wrap;
     animation: fadeInUp 1s ease-out 0.4s backwards;
 }
@@ -312,7 +312,7 @@ a:focus-visible, button:focus-visible, [role="button"]:focus-visible {
 
 /* SECTIONS */
 .section {
-    padding: 120px 5%;
+    padding: 84px 5%;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -321,7 +321,7 @@ a:focus-visible, button:focus-visible, [role="button"]:focus-visible {
     text-align: center;
     font-size: 2.8rem;
     font-weight: 800;
-    margin-bottom: 4rem;
+    margin-bottom: 2.75rem;
     animation: fadeInUp 0.8s ease-out;
 }
 
@@ -352,8 +352,8 @@ a:focus-visible, button:focus-visible, [role="button"]:focus-visible {
 
 .opportunity-card {
     max-width: 900px;
-    margin: 3rem auto 0;
-    padding: 1.75rem 2rem;
+    margin: 2rem auto 0;
+    padding: 1.5rem 1.75rem;
     display: grid;
     grid-template-columns: auto 1fr auto;
     align-items: center;
@@ -410,12 +410,12 @@ a:focus-visible, button:focus-visible, [role="button"]:focus-visible {
 .formation-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2.5rem;
+    gap: 1.5rem;
 }
 
 .formation-card {
     background: var(--card);
-    padding: 2.5rem;
+    padding: 2rem;
     border-radius: 16px;
     box-shadow: var(--shadow);
     border: 1px solid var(--line);
@@ -446,19 +446,19 @@ a:focus-visible, button:focus-visible, [role="button"]:focus-visible {
 .skills-grid, .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2.5rem;
+    gap: 1.5rem;
 }
 
 .projects-intro {
     max-width: 680px;
-    margin: -2rem auto 3rem;
+    margin: -1rem auto 2rem;
     text-align: center;
     color: var(--muted);
 }
 
 .skill-bar, .project-card {
     background: var(--card);
-    padding: 2rem;
+    padding: 1.5rem;
     border-radius: 18px;
     box-shadow: var(--shadow);
     border: 1px solid var(--line);
@@ -596,7 +596,7 @@ a:focus-visible, button:focus-visible, [role="button"]:focus-visible {
 
 .filter-buttons {
     text-align: center;
-    margin-bottom: 4rem;
+    margin-bottom: 2.5rem;
     display: flex;
     justify-content: center;
     gap: 1rem;
@@ -900,13 +900,24 @@ footer p:last-child {
         min-height: auto;
         flex-direction: column;
         align-items: stretch;
-        gap: 2rem;
-        padding-top: 120px;
+        gap: 1.25rem;
+        padding: 88px 5% 36px;
     }
     .hero-image {
-        width: min(72vw, 260px);
+        order: -1;
+        width: min(62vw, 228px);
         flex: none;
         align-self: center;
+    }
+    .hero-buttons {
+        margin: 1.5rem 0 0;
+        gap: 0.75rem;
+    }
+    .section {
+        padding: 60px 5%;
+    }
+    .section-title {
+        margin-bottom: 2rem;
     }
     .opportunity-card {
         grid-template-columns: auto 1fr;
@@ -933,6 +944,9 @@ footer p:last-child {
     }
     .project-card .project-preview img {
         height: 190px;
+    }
+    .formation-card {
+        padding: 1.5rem;
     }
 }
 
