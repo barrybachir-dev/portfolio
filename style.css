@@ -282,16 +282,16 @@ a:focus-visible, button:focus-visible, [role="button"]:focus-visible {
 }
 
 .hero-image {
-    flex: 0 1 430px;
+    flex: 0 0 clamp(220px, 28vw, 320px);
     animation: slideInRight 0.8s ease-out;
 }
 
 .profile-img {
     width: 100%;
-    aspect-ratio: 4 / 5;
+    aspect-ratio: 1;
     object-fit: cover;
     object-position: center 30%;
-    border-radius: 18px;
+    border-radius: 50%;
     box-shadow: var(--shadow-lg);
     border: 1px solid var(--line);
 }
@@ -761,7 +761,7 @@ footer p:last-child {
         padding-top: 120px;
     }
     .hero-image {
-        width: min(100%, 380px);
+        width: min(72vw, 260px);
         flex: none;
         align-self: center;
     }
